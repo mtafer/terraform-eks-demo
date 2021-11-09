@@ -1,7 +1,8 @@
 # terraform-eks-demo
 terraform-eks-demo
 
-# This reposity is highly inspired from this article
+# Context
+This reposity is highly inspired from this article
 https://faun.pub/automate-provisioning-of-kubernetes-clusters-on-aws-with-terraform-61ff6aaf8ead
 
 # GIT
@@ -11,11 +12,22 @@ https://faun.pub/automate-provisioning-of-kubernetes-clusters-on-aws-with-terraf
     version=`cat version.txt`  
     message="*yourmessage*"
     
-    ## 1. Push your changes into into the SAMI GIT folder
+1. Push your changes into into the SAMI GIT folder
     git add *  
     git status  
     git commit -a -m "Version $version - $message"  
     git tag -a $version -m "Version $version - $message"  
     git push && git push --tags  
     
-    ## 2. Update Puppetfile into the repository r10k
+2. Update Puppetfile into the repository r10k
+
+# TERRAFORM
+## Set the env variables
+    export AWS_ACCOUNT=<VALUE>
+    export AWS_ACCESS_KEY_ID=<VALUE>
+    export AWS_SECRET_ACCESS_KEY=<VALUE>
+    export AWS_DEFAULT_REGION="us-east-1"
+## Run a plan 
+    terraform plan -out=out.tfplan
+## Apply the plan
+    terraform apply out.tfplan
