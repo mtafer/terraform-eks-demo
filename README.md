@@ -13,6 +13,7 @@ https://faun.pub/automate-provisioning-of-kubernetes-clusters-on-aws-with-terraf
     message="*yourmessage*"
     
 1. Push your changes into into the SAMI GIT folder
+
     git add *  
     git status  
     git commit -a -m "Version $version - $message"  
