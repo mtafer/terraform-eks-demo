@@ -1,4 +1,4 @@
-# terraform-eks-demo
+# terraform-eks-template
 terraform-eks-demo
 
 # Context
