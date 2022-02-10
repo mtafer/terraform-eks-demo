@@ -3,7 +3,7 @@ terraform-eks-demo
 
 # Context
 This reposity is highly inspired from this article
-https://faun.pub/automate-provisioning-of-kubernetes-clusters-on-aws-with-terraform-61ff6aaf8ead
+https://learn.hashicorp.com/tutorials/terraform/eks?in=terraform/kubernetes
 
 # GIT
 ### Prerequisites
